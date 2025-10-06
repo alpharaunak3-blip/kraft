@@ -78,8 +78,8 @@ export const StrategyStudio: React.FC = ({onTabChange}) => {
     const tabs = [
     { id: 'create', label: 'Create Campaign', icon: Plus },
     // { id: 'legacy', label: 'Legacy Campaigns', icon: Target },
-    { id: 'manage', label: 'Manage Campaigns', icon: Settings },
-    { id: 'analytics', label: 'Campaign Analytics', icon: BarChart3 },
+    // { id: 'manage', label: 'Manage Campaigns', icon: Settings },
+    // { id: 'analytics', label: 'Campaign Analytics', icon: BarChart3 },
     { id: 'templates', label: 'Templates', icon: FileText },
   ];
 
@@ -1151,14 +1151,14 @@ const simulateThinkingTasks = () => {
                 <div className="text-center pt-6">
                   <button 
                     // onClick={handleGoToCreatorStudio}
-                    className={`px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-xl ${
+                    className={`px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${
                       theme === 'neon' 
                         ? 'bg-gradient-to-r from-blue-500 to-blue-500 text-white shadow-lg shadow-blue-500/50' 
                         : 'bg-gradient-to-r from-blue-500 to-blue-500  text-white hover:shadow-blue-500/50'
                     } flex items-center mx-auto`}
                   >
                     <Save className="mr-3" size={24} />
-                    Confirm
+                    Save
                   </button>
                   <p className={`${themeClasses.textSecondary} text-sm mt-3`}>
                     Go to Create Studio to generate campaign assets
@@ -1167,14 +1167,14 @@ const simulateThinkingTasks = () => {
                    <div className="text-center pt-6">
                   <button 
                     onClick={() => onTabChange("creator")}
-                    className={`px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-xl ${
+                    className={`px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${
                       theme === 'neon' 
                         ? 'bg-gradient-to-r from-blue-500 to-blue-500 text-white shadow-lg shadow-blue-500/50' 
                         : 'bg-gradient-to-r from-blue-500 to-blue-500  text-white hover:shadow-blue-500/50'
                     } flex items-center mx-auto`}
                   >
                     <Palette className="mr-3" size={24} />
-                    Create Studio
+                    Confirm & Next
                   </button>
                   <p className={`${themeClasses.textSecondary} text-sm mt-3`}>
                     Go to Create Studio to generate campaign assets
