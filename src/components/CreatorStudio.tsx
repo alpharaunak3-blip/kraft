@@ -278,7 +278,7 @@ const mockAssets: GeneratedAsset[] = Array.from({ length: 6 }, (_, index) => ({
 
   const renderStepIndicator = () => (
     <div className={`${themeClasses.cardBg} rounded-3xl p-8 mb-8 ${themeClasses.shadow} border-2 ${themeClasses.border}`}>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-start gap-64">
         {steps.map((step, index) => (
           <div key={step.id} className="flex items-center">
             <div className={`flex items-center space-x-4 ${index < steps.length - 1 ? 'flex-1' : ''}`}>
